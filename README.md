@@ -16,7 +16,7 @@ and text files for the team names.
 
 - Change into the directory of this repo and from the command line run `node app.js` 
 
-- Browse to `localhost:3000``
+- Browse to `localhost:3000`
 
 - Enter in the team names, series length, and the number of wins for each team.
 The app will render out assets to use in your stream in OBS. Pressing enter
@@ -33,7 +33,7 @@ Just hit Update Scores again and it will take.
 
  - Our cabinet arrangement is Blue team on the left in the overlay and gold on the right.
 
- - I also like using (ngrok)[https://ngrok.com/] with this. This will set up a publicly accessible URL with a tunnel to a local port on your machine. Open up another command prompt and run `ngrok http 3000`. You'll see a Fowarding url like `http://4bbdf311.ngrok.io` If you configure ngrok with an account, you can get yourself a fixed subdomain too. This is nice to pull up on another computer, phone, or tablet to update the scores and not interfere with the stream itself.  You can give the link to others to update the scores.
+ - I also like using [ngrok](https://ngrok.com/) with this. This will set up a publicly accessible URL with a tunnel to a local port on your machine. Open up another command prompt and run `ngrok http 3000`. You'll see a Fowarding url like `http://4bbdf311.ngrok.io` If you configure ngrok with an account, you can get yourself a fixed subdomain too. This is nice to pull up on another computer, phone, or tablet to update the scores and not interfere with the stream itself.  You can give the link to others to update the scores.
 
  Theres a few other overlays in the assets folder. We have a scene for jsut the team cams and commentator cam. We use hotkeys in OBS to switch between scenes like the main gameplay with overlay and this view of the commentators, also a scene with a Web Browser showing the Challonge Brackets.
 
