@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Killer Queen STL Scoreboard</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+      <h1>Killer Queen STL Scoreboard </h1>
+      
+      <label for="seriesLength">Series Length:</label>
+      <input name="seriesLength" id="seriesLength" />
+
+      <br />
+      <label for="blueTeam">Blue Team Name:</label>
+      <input name="blueTeam" id="blueTeam" />
+
+      <br />
+      <label for="goldTeam">Gold Team Name:</label>
+      <input name="goldTeam" id="goldTeam" />
+
+      <br /><br />
+      <label for="blueScore">Blue Score:</label>
+      <input name="blueScore" id="blueScore" />
+      
+      <br />
+      <label for="goldScore">Gold Score:</label>
+      <input name="goldScore" id="goldScore" />
+      <br />
+      <button id="updateScore">Update Scoreboard</button>
+
+      <hr />
+      <button id="resetScore">Reset Scoreboard</button>
+
+
+      <script>
+        
+        document.onkeydown = function(event) {
+          if(event.keyCode == '13') {
+            updateScoreboard();
+            return false;
+          }
+        };
+
+        var updateScoreBtn = document.getElementById("updateScore");
+        updateScoreBtn.addEventListener("click", updateScoreboard);
+
+        function updateScoreboard () {
+          console.log('update');
+          var score = {
+            "series": document.getElementById("seriesLength").value,
+            "blueTeam": document.getElementById("blueTeam").value,
+            "goldTeam": document.getElementById("goldTeam").value, 
+            "score": {
+              "blue": document.getElementById("blueScore").value, 
+              "gold": document.getElementById("goldScore").value,
+            }
+          };
+          
+          var xmlhttp = new XMLHttpRequest(); 
+          xmlhttp.open("POST", "/api/scores");
+          xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+          xmlhttp.send(JSON.stringify(score));
+        }
+
+
+
+        var resetScoreBtn = document.getElementById("resetScore");
+        resetScoreBtn.addEventListener("click", resetScoreboard);
+
+        function resetScoreboard () {
+          console.log('reset');
+          var xmlhttp = new XMLHttpRequest(); 
+          xmlhttp.open("POST", "/api/scores/reset");
+          xmlhttp.send();
+
+          document.getElementById("seriesLength").value = '';
+          document.getElementById("blueTeam").value = '';
+          document.getElementById("goldTeam").value = '';
+          document.getElementById("blueScore").value = '';
+          document.getElementById("goldScore").value = '';
+        }
+        
+        
+
+      </script>
+  </body>
+</html>

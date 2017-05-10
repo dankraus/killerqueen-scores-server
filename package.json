@@ -1,0 +1,30 @@
+{
+  "name": "killerqueen-scores-server",
+  "version": "0.0.1",
+  "description": "Backend server for updating KQ scores and overlays",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dan Kraus",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "gm": "^1.23.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "github.com/dankraus/killerqueen-scores-server"
+  },
+  "keywords": [
+    "killer",
+    "queen",
+    "arcade",
+    "score",
+    "node",
+    "express",
+    "graphicsmagik"
+  ]
+}
