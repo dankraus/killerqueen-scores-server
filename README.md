@@ -63,3 +63,5 @@ Ex: Given a padding of 10. Gold Coords are at [120, 50]. Gold Marker 1 will be a
 
 - Add an image layer for the overlay. Set it to the file located at `assets/overlays/rendered-overlay.jpg`. This file will have the scoring markers dynamically written to it. 
 
+Included is also `OBS_Config.json` which is an export of the OBS stream we set up in Saint Louis. The file paths to images will certainly be wrong so you'll need reload the images in.
+
