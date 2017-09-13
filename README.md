@@ -12,6 +12,11 @@ and text files for the team names.
 
 - Run `npm install`
 
+## Example Output
+This shows a best of 7 series that Gold won 4 games to 1. Not the colored in markers on Gold's side and and uncolored markers on blue's side. This app will dynamically update the number of score markers based on the entered series length and change color based on entered score. Scores, series length, and team names are input via a simple form in a web browser. Update from another computer, phone, whatever. Not pictured below are the team names output. Simply replace the graphics in this repository with your own for the main background overlay, a blue and gold win marker, and a blue and gold need-to-win marker. Included in this repo are other overlays/scenes for a commentator cam + cabinet cams, and a crowd cam. Browse `/assets/overlays`.
+
+![Example Rendered Output](https://raw.githubusercontent.com/dankraus/killerqueen-scores-server/master/assets/overlays/rendered-overlay.jpg)
+
 ## Usage
 
 - Change into the directory of this repo and from the command line run `node app.js` 
