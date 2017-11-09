@@ -6,9 +6,11 @@ and text files for the team names.
 
 ## Installation
 
-- NodeJS (Obviously). I had been running v6.10
+- NodeJS. I had been running v6.10. Should work on current version too
 
 - [GraphicsMagick](http://www.graphicsmagick.org/)
+
+- [ngork ](https://ngrok.com/) - to serve the app over the internet to reach it from another computer/phone/whatever
 
 - Run `npm install`
 
