@@ -23,7 +23,7 @@ This shows a best of 7 series that Gold won 4 games to 1. Not the colored in mar
 
 - Change into the directory of this repo, install node dependencies from the command like with `npm install`. Then run `node app.js` 
 
-- Browse to `localhost:3000`
+- Browse to `http://localhost:3000`
 
 - Enter in the team names, series length, and the number of wins for each team.
 The app will render out assets to use in your stream in OBS. Pressing enter
